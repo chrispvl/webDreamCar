@@ -1,80 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About and Contact Us - My Dream Car: Online</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            color: #333;
-            line-height: 1.6;
-            background-color: #f9f9f9;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Dream Car: Online</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
-            /* Добавляем фон с обложкой */
-            background-image: url('https://play-lh.googleusercontent.com/9OXx9bBpCe1Hkri5Q68PX3OXWKoRZ4bNH8F-P0lb5gJBOcPe2CHNXtgRJ1JSfA7NwQ=s180-rw'); /* Пример обложки */
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: contain;
-            /* Чтобы текст был читаем, можно добавить полупрозрачный слой */
-            position: relative;
-        }
+  body {
+    margin: 0;
+    background-color: #f2e6d9; /* теплый светлый фон */
+    font-family: Arial, sans-serif;
+    color: #4a3b2b;
+  }
 
-        /* Добавим затемнение фона для удобства чтения */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(255, 255, 255, 0.85);
-            z-index: -1;
-        }
+  .banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: #6b4c3b url('https://www.transparenttextures.com/patterns/brick-wall.png') repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    box-shadow: inset 0 -4px 10px rgba(255, 255, 255, 0.2);
+    color: #f9d99b;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 36px;
+    text-shadow:
+      1px 1px 2px #3a2e1f,
+      0 0 8px #f7b86e;
+    user-select: none;
+    letter-spacing: 1.5px;
+  }
 
-        h1, h2 {
-            color: #222;
-        }
-        a {
-            color: #007acc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #666;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
-        }
-    </style>
+  .content {
+    max-width: 800px;
+    margin: 110px auto 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+  }
+
+  h1, h2 {
+    color: #6b4c3b;
+    text-shadow: 1px 1px 0 #f2e6d9;
+  }
+
+  a {
+    color: #b3773a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #d4a15a;
+    text-shadow: 0 0 5px #d4a15a;
+  }
+
+  footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #7a5c44;
+    border-top: 1px solid #d4a15a;
+    padding-top: 20px;
+  }
+</style>
 </head>
 <body>
 
-    <h1>About and Contact Us</h1>
+  <div class="banner">
+    HyperBong Games
+  </div>
 
-    <p>Welcome to <strong>My Dream Car: Online</strong> — your ultimate car mechanic simulator where you can build, repair, and tune cars in a realistic and immersive environment.</p>
-
-    <p>Our mission is to deliver a fun and authentic experience for car enthusiasts and gamers alike. Whether you're into driving, racing, or just love cars, our game offers you a unique playground to explore and create.</p>
+  <div class="content">
+    <h1>My Dream Car: Online</h1>
+    <p>Your ultimate car mechanic simulator where you can build, repair, and tune cars in a realistic and immersive environment.</p>
 
     <h2>Contact Us</h2>
-    <p>We’d love to hear from you! Whether you have questions, feedback, or need support, feel free to reach out:</p>
-    <ul>
-        <li><strong>Email:</strong> <a href="mailto:myfchelper@gmail.com">myfchelper@gmail.com</a></li>
-        <li><strong>Support Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM (Your Time Zone)</li>
-    </ul>
+    <p>Email: <a href="mailto:myfchelper@gmail.com">myfchelper@gmail.com</a></p>
+    <p>Support Hours: Monday - Friday, 9:00 AM - 6:00 PM (Your Time Zone)</p>
 
     <h2>Links</h2>
-    <ul>
-        <li><a href="https://www.youtube.com/@HyperBongGames" target="_blank" rel="noopener">YouTube Channel - HyperBongGames</a></li>
-        <li><a href="https://play.google.com/store/apps/dev?id=9070925107280874121" target="_blank" rel="noopener">Google Play Developer Page</a></li>
-    </ul>
+    <p><a href="https://www.youtube.com/@HyperBongGames" target="_blank" rel="noopener">YouTube Channel</a></p>
+    <p><a href="https://play.google.com/store/apps/dev?id=9070925107280874121" target="_blank" rel="noopener">Google Play Developer Page</a></p>
 
     <footer>
-        <p>Thank you for playing our game and being part of our community!</p>
+      <p>Thank you for playing our game and being part of our community!</p>
     </footer>
+  </div>
 
 </body>
 </html>
